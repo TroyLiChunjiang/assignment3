@@ -7,9 +7,7 @@
 #' @return a single value which is the Riemann approximation to the integral
 #' @export
 #'
-#' @examples
-#' > riemann(function(x){x^2}, c(1,2), 100)
-#' 2.34835
+#' @examples riemann(function(x){x^2}, c(1,2), 100)
 riemann <- function(f, range, n) {
     a <- range[1]
     b <- range[2]

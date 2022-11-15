@@ -7,9 +7,7 @@
 #' @return a single value which is the trapezoid approximation to the integral
 #' @export
 #'
-#' @examples
-#' > trapezoid(function(x){x^2}, c(1,2), 100)
-#' 2.33335
+#' @examples trapezoid(function(x){x^2}, c(1,2), 100)
 trapezoid <- function(f, range, n) {
     a <- range[1]
     b <- range[2]

@@ -1,0 +1,27 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(assignment3)
+```
+
+
+```{r}
+x <- rchisq(100000, df = 2)
+hist(x,breaks = 30, probability = T)
+plot(function(x){dchisq(x, df=2)},0,4)
+```
+

@@ -7,9 +7,7 @@
 #' @return a single value which is the Simpson's approximation to the integral
 #' @export
 #'
-#' @examples
-#' > simpsons(function(x){x^2}, c(1,2), 100)
-#' 2.333333
+#' @examples simpsons(function(x){x^2}, c(1,2), 100)
 simpsons <- function(f, range, n) {
     a <- range[1]
     b <- range[2]
